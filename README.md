@@ -50,6 +50,22 @@ Open the directory below to find scripts that will set up your databases.
 
 You can skip 3-multi-pool-partition.sql if you're still testing.
 
+Building the Pool
+-----------------
+```
+go build
+```
+
+Then once building is complete, you can run the pool like so:
+```
+./dogepool
+```
+
+To run the pool behind screen, can run this:
+```
+screen -dmS pool ./dogepool
+```
+
 Connecting to the pool
 ----------------------
 
