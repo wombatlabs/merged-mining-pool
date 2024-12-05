@@ -19,7 +19,7 @@ func (Bitcoincash) HeaderDigest(header string) (string, error) {
 }
 
 func (Bitcoincash) ShareMultiplier() float64 {
-	return 65536
+	return 1
 }
 
 func (Bitcoincash) ValidMainnetAddress(address string) bool {
