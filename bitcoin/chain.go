@@ -15,8 +15,12 @@ type Blockchain interface {
 
 func GetChain(chainName string) Blockchain {
 	switch chainName {
+	case "bitcoincash":
+		return BitcoinCash{}
 	case "dogecoin":
 		return Dogecoin{}
+	case "ecash":
+		return ECash{}
 	case "litecoin":
 		return Litecoin{}
 	default:
